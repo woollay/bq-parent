@@ -6,7 +6,7 @@
 
     <groupId>com.biuqu</groupId>
     <artifactId>bq-parent</artifactId>
-    <version>1.0.3</version>
+    <version>1.0.5</version>
     <packaging>pom</packaging>
 
     <name>bq-parent</name>
@@ -47,7 +47,7 @@
         <bouncycastle.version>1.70</bouncycastle.version>
         <logback.version>1.2.5</logback.version>
         <slf4j.version>1.7.30</slf4j.version>
-        <bq.version>1.0.3</bq.version>
+        <bq.version>1.0.5</bq.version>
     </properties>
 
     <!-- Default dependencies in all subprojects -->
@@ -164,9 +164,15 @@
                 <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
                 <version>${spring.cloud.alibaba.version}</version>
             </dependency>
+            <!--sentinel熔断降级-->
             <dependency>
                 <groupId>com.alibaba.cloud</groupId>
                 <artifactId>spring-cloud-starter-alibaba-sentinel</artifactId>
+                <version>${spring.cloud.alibaba.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba.cloud</groupId>
+                <artifactId>spring-cloud-alibaba-sentinel-gateway</artifactId>
                 <version>${spring.cloud.alibaba.version}</version>
             </dependency>
             <dependency>
